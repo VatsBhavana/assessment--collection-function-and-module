@@ -42,7 +42,7 @@ while status:
                 fruit_qyt_price['price']=price
 
                 fruit[name]=fruit_qyt_price
-                fruit_market(f"who is using:manager \n fruit:{name} \n qty:{qty}kg \n price:{price}")
+                fruit_market(f"who is using:manager \n fruit:{name} \n qty:{qty}kg \n price:{price}") #file handling
                 print(fruit)
 
                 choice_for_fruit=input("do you like to add,view and update fruit yes for y no for n:")
@@ -53,7 +53,7 @@ while status:
                 print("fruit | qty | price")
                 for k,v in fruit.items():
                     print(f"{k} | {v['qty']} | {v['price']}")
-                    fruit_market("manager view the stock")
+                    fruit_market("manager view the stock") #file handling
                 print(fruit)
 
                 choice_for_fruit=input("do you like to add,view and update fruit yes for y no for n:")
@@ -68,8 +68,8 @@ while status:
                     fruit[name]['qty']=qty
                     fruit[name]['price']=price
                     print(fruit)
-                    fruit_market(f"who is using:manager \n fruit:{name} \n qty:{qty}kg \n price:{price}")
-                    fruit_market("new update value")
+                    fruit_market(f"who is using:manager \n fruit:{name} \n qty:{qty}kg \n price:{price}")#filr handling
+                    fruit_market("new update value") #file handling
                 else:
                     print(f"{name} not in stock")
                     choice_for_fruit=input("do you like to add,view and update fruit yes for y no for n:")
@@ -102,12 +102,12 @@ while status:
                                     print("==== total cart =====")
                                     print(f"{k} | {v['qty']} | {v['price']}")
                                 print("total bill:-",sum(l1))
-                                fruit_market(f"who is using:customer \n fruit:{name} \n qty:{qty}kg \n price:{price}")
-                                fruit_market(f"who is using:add bill in cart {sum(l1)}")
+                                fruit_market(f"who is using:customer \n fruit:{name} \n qty:{qty}kg \n price:{price}") #file handling
+                                fruit_market(f"who is using:add bill in cart {sum(l1)}") #file handling
                                 
                              else:
                                 print("not in stock")
-                                fruit_market(f"who is using:customer \n not in stock")
+                                fruit_market(f"who is using:customer \n not in stock") #file handling
 
 
                              choice_for_fruit=input("do you like to purchase fruit yes for y no for n:")
@@ -115,7 +115,7 @@ while status:
                                stat=False
     elif customer_choice==2:
         print("thank you for visiting")
-        fruit_market("exit")
+        fruit_market("exit") #file handling
 
     
         
