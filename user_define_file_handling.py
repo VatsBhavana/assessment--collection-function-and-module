@@ -2,9 +2,7 @@ import datetime
 
 def fruit_market(data):
     """
-    jdhjaskdsjksjg
-    ljsjdsklj
-    fkefks;lkflds;k
+    fruit market
     """
     d=datetime.datetime.today()
     f=open("fruit_log.txt","a")
